@@ -48,5 +48,21 @@ export class AppComponent {
     }
   }, 1000);
 
+
+  /*
+  secondsLocal: number = 60;
+
+  guess =(userinput) =>
+
+  constructor(counterservice: CounterService) {
+    counterservice.seconds.subscribe((seconds) => {
+      this.secondsLocal = seconds;
+    });
+  }
+
+
+  */
+
+
   
 }
