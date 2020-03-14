@@ -20,11 +20,12 @@ export class AppComponent {
   degok;
   gok() {
     this.degok = parseFloat((<HTMLInputElement>document.getElementById("degok")).value);
+    
     if (this.degok < this.nummer) {
-      this.hint = "hoger";
+      this.hint = "Hoger";
     }
     else if (this.degok > this.nummer) {
-      this.hint = "lager";
+      this.hint = "Lager";
     }
     else {
       window.alert("Je hebt het juist nummer geraden! :D Wil je opnieuw spelen?");
@@ -36,7 +37,6 @@ export class AppComponent {
       window.location.reload();
     }
   }
-
   seconden : number;
   timer = setInterval(function() {
     CounterService.counter -=1;
@@ -47,6 +47,7 @@ export class AppComponent {
       window.location.reload();
     }
   }, 1000);
+
 
 
   /*
@@ -63,6 +64,18 @@ export class AppComponent {
 
   */
 
+
+  /*
+  // Get the input field
+  getypt = document.getElementById("degok");
+
+// Execute a function when the user releases a key on the keyboard
+  ("degok").keypress(function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("getal").click();
+  }
+});*/
 
   
 }
